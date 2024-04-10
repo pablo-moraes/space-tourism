@@ -1,0 +1,116 @@
+.section_container {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: calc(5em + 4vw);
+    align-items: flex-end;
+    height: 100%;
+    padding-bottom: 8vw;
+    overflow: hidden;
+}
+
+#root .section_container {
+    flex: 1 1 auto;
+}
+
+
+.article_container {
+    width: 50%;
+}
+
+.article_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.article_text h1 {
+    font-family: var(--bellefair);
+    font-weight: 500;
+    font-size: calc(3.4em + 5vw);
+}
+
+.article_text h2 {
+    font-family: var(--barlow-condensed);
+    font-size: calc(1em + .6vw);
+    font-weight: 500;
+    letter-spacing: 4.72px;
+}
+
+.article_text p {
+    font-family: var(--barlow);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    max-width: 444px;
+}
+
+.article_explore {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.explore_button {
+    all: unset;
+    width: 50%;
+    max-width: 275px;
+    min-width: 175px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    
+    border: none;
+    font-family: var(--bellefair);
+    font-size: calc(1em + 1vw);
+    position: relative;
+    cursor: pointer;
+    background-color: #FFF;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.explore_button:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.247);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: -1;
+    transition: .25s ease-out;
+    -webkit-transition: .25s ease-out;
+}
+
+.explore_button:hover:after {
+    width: 135%;
+    height: 135%;
+    opacity: 1;
+}
+
+
+/* Media query para dispositivos móveis (ex: smartphones em modo retrato) */
+@media only screen and (max-width: 767px) {
+    .section_container {
+        padding-inline: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .article_container {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .article_text h1 {
+        font-size: 4.5rem;
+    }
+
+    .article_text h2 {
+        font-size: 1rem;
+    }
+  }
+

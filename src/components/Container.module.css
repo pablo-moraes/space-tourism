@@ -1,0 +1,18 @@
+.container {
+    padding-inline: 10rem;
+    background: green;    
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}

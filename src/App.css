@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: fit-content;
+  min-width: 100%;
+  height: 100%;
+  color: var(--secondary-color);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.bg-home::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.bg-home:has(.destination)::before {
+  background: no-repeat left / cover fixed url('./assets/images/destination_background.png');
+}
+
+.bg-home:has(.home)::before {
+  background: no-repeat left / cover fixed url('./assets/images/space_background.png');
+}
+
+.bg-home:has(.crew)::before {
+  background: no-repeat left / cover fixed url('./assets/images/crew_background.png');
+}
+
+.bg-home:has(.technology)::before {
+  background: no-repeat left / cover fixed url('./assets/images/technology_background.png');
+}
+
+@media only screen and (max-width: 768px) {
+  .bg-home:has(.home)::before {
+    background: no-repeat bottom / cover fixed url('./assets/images/space_background_rotate.png');
+  }
+}
+
+
+/* Custom Pagination Style */
+
+.swiper-pagination-bullet {
+  background: #fff !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.crew_slider .swiper-scrollbar {
+  display: none !important;
+}
+
+.swiper-scrollbar {
+  display: none !important;
+}
+
+.swiper-container {
+  padding-bottom: 35px;
+}
+
+.swiper-pagination {
+  width: fit-content !important;
+    position: sticky !important;
+    margin-top: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .swiper-pagination {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+}

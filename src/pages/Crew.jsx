@@ -9,7 +9,6 @@ function Crew() {
 
     const [fade, setFade] = useState(false);
     const [currentCrewMember, setCurrentCrewMember] = useState(crew[0]);
-    console.log(currentCrewMember.length)
 
     const changeCurrentCrew = member => {
         setFade(true);
@@ -31,7 +30,7 @@ function Crew() {
                 </article>
 
                 <article className={fade ? styles.fade_in : styles.fade_out}>
-                    <img src={`/src/assets/images/crew/${currentCrewMember.photo}`} alt={`${currentCrewMember.name}`} />
+                    <img src={currentCrewMember.photo} alt={`${currentCrewMember.name}`} />
                 </article>
             </section>
         </>

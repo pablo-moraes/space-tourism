@@ -66,8 +66,8 @@ function Technology() {
                     </article>
                 </section>
                 <section className={styles.image_container}>
-                    <img src={`/src/assets/images/technology/${currentImage.desktop}`} alt={currentImage.alt} />
-                    <img src={`/src/assets/images/technology/${currentImage.mobile}`} alt={currentImage.alt} />
+                    <img src={currentImage.desktop} alt={currentImage.alt} />
+                    <img src={currentImage.mobile} alt={currentImage.alt} />
                 </section>
             </main>
         </>

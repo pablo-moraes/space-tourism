@@ -1,21 +1,30 @@
+import LaunchVehicle from '/src/assets/images/technology/image-launch-vehicle-portrait.jpg';
+import LaunchVehicleMobile from '/src/assets/images/technology/image-launch-vehicle-landscape.jpg';
+
+import SpacePort from '/src/assets/images/technology/image-spaceport-portrait.jpg';
+import SpacePortMobile from '/src/assets/images/technology/image-spaceport-landscape.jpg';
+
+import SpaceCapsule from '/src/assets/images/technology/image-space-capsule-portrait.jpg';
+import SpaceCapsuleMobile from '/src/assets/images/technology/image-space-capsule-landscape.jpg';
+
 const technologies_imgs = [
     {
         tab: 'tab1',
         alt: 'Launch Vehicle',
-        desktop: 'image-launch-vehicle-portrait.jpg',
-        mobile: 'image-launch-vehicle-landscape.jpg'
+        desktop: LaunchVehicle,
+        mobile: LaunchVehicleMobile
     },
     {
         tab: 'tab2',
         alt: 'SpacePort',
-        desktop: 'image-spaceport-portrait.jpg',
-        mobile: 'image-spaceport-landscape.jpg'
+        desktop: SpacePort,
+        mobile: SpacePortMobile
     },
     {
         tab: 'tab3',
         alt: 'Space Capsule',
-        desktop: 'image-space-capsule-portrait.jpg',
-        mobile: 'image-space-capsule-landscape.jpg'
+        desktop: SpaceCapsule,
+        mobile: SpaceCapsuleMobile
     }
 ];
 

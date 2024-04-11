@@ -10,11 +10,14 @@ function Destination() {
     const [currentDestination, setCurrentDestination] = useState(destinations[0]);
 
     const changeDestination = destination => {
-        setFade(true)
-        setTimeout(() => {
-            setCurrentDestination(destination);
-            setFade(false)
-        }, 300)
+        if(destination.name !== currentDestination.name) {
+            setFade(true)
+            setTimeout(() => {
+                setCurrentDestination(destination);
+                setFade(false)
+            }, 300)
+        }
+      
     }
 
     return (
@@ -25,7 +28,7 @@ function Destination() {
 
             <div className={styles.destination_container}>
                 <article className={fade ? styles.fade_in : styles.fade_out}>
-                    <img src={`/src/assets/images/destinations/${currentDestination.photo}`} alt={`${currentDestination.name}`} />
+                    <img src={currentDestination.photo} alt={`${currentDestination.name}`} />
                 </article>
                 <article>
                     {destinations && (

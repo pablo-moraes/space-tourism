@@ -2,20 +2,20 @@ const technologies_imgs = [
     {
         tab: 'tab1',
         alt: 'Launch Vehicle',
-        desktop: 'launch_vehicle.jpg',
-        mobile: 'launch_vehicle_mobile.png'
+        desktop: 'image-launch-vehicle-portrait.jpg',
+        mobile: 'image-launch-vehicle-landscape.jpg'
     },
     {
         tab: 'tab2',
         alt: 'SpacePort',
-        desktop: 'spaceport.jpg',
-        mobile: 'spaceport_mobile.png'
+        desktop: 'image-spaceport-portrait.jpg',
+        mobile: 'image-spaceport-landscape.jpg'
     },
     {
         tab: 'tab3',
         alt: 'Space Capsule',
-        desktop: 'space_capsule.jpg',
-        mobile: 'space_capsule_mobile.png'
+        desktop: 'image-space-capsule-portrait.jpg',
+        mobile: 'image-space-capsule-landscape.jpg'
     }
 ];
 

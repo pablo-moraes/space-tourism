@@ -8,10 +8,8 @@ import styles from './Crew.module.css';
 function Crew() {
 
     const [fade, setFade] = useState(false);
-    const [currentCrewMember, setCurrentCrewMember] = useState({
-        name: 'Douglas Hurley',
-        photo: 'douglas_hurley.png'
-    });
+    const [currentCrewMember, setCurrentCrewMember] = useState(crew[0]);
+    console.log(currentCrewMember.length)
 
     const changeCurrentCrew = member => {
         setFade(true);

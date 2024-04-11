@@ -27,7 +27,7 @@ function CrewSlider({ crew, styles, onSwipe }) {
             <SwiperSlide key={index}>
                 <h2>{member.role}</h2>
                 <h1>{member.name}</h1>
-                <p>{member.description}</p>
+                <p>{member.bio}</p>
             </SwiperSlide>
           )}
         </Swiper>

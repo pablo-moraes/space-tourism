@@ -29,24 +29,54 @@ body,
 }
 
 .bg-home:has(.destination)::before {
-  background: no-repeat left / cover fixed url('./assets/images/destination_background.png');
+  background: no-repeat left / cover fixed url('./assets/images/background/background-destination-desktop.jpg');
 }
 
 .bg-home:has(.home)::before {
-  background: no-repeat left / cover fixed url('./assets/images/space_background.png');
+  background: no-repeat left / cover fixed url('./assets/images/background/background-home-desktop.jpg');
 }
 
 .bg-home:has(.crew)::before {
-  background: no-repeat left / cover fixed url('./assets/images/crew_background.png');
+  background: no-repeat left / cover fixed url('./assets/images/background/background-crew-desktop.jpg');
 }
 
 .bg-home:has(.technology)::before {
-  background: no-repeat left / cover fixed url('./assets/images/technology_background.png');
+  background: no-repeat left / cover fixed url('./assets/images/background/background-technology-desktop.jpg');
 }
 
 @media only screen and (max-width: 768px) {
+  .bg-home:has(.destination)::before {
+    background: no-repeat left / cover fixed url('./assets/images/background/background-destination-tablet.jpg');
+  }
+  
   .bg-home:has(.home)::before {
-    background: no-repeat bottom / cover fixed url('./assets/images/space_background_rotate.png');
+    background: no-repeat left / cover fixed url('./assets/images/background/background-home-tablet.jpg');
+  }
+  
+  .bg-home:has(.crew)::before {
+    background: no-repeat left / cover fixed url('./assets/images/background/background-crew-tablet.jpg');
+  }
+  
+  .bg-home:has(.technology)::before {
+    background: no-repeat left / cover fixed url('./assets/images/background/background-technology-tablet.jpg');
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .bg-home:has(.destination)::before {
+    background: no-repeat left / cover fixed url('./assets/images/background/background-destination-mobile.jpg');
+  }
+  
+  .bg-home:has(.home)::before {
+    background: no-repeat left / cover fixed url('./assets/images/background/background-home-mobile.jpg');
+  }
+  
+  .bg-home:has(.crew)::before {
+    background: no-repeat left / cover fixed url('./assets/images/background/background-crew-mobile.jpg');
+  }
+  
+  .bg-home:has(.technology)::before {
+    background: no-repeat left / cover fixed url('./assets/images/background/background-technology-mobile.jpg');
   }
 }
 

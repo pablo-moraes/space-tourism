@@ -7,10 +7,7 @@ import styles from './Destination.module.css';
 function Destination() {
     
     const [fade, setFade] = useState(false);
-    const [currentDestination, setCurrentDestination] = useState({
-        photo: 'moon.png',
-        name: 'Moon'
-    });
+    const [currentDestination, setCurrentDestination] = useState(destinations[0]);
 
     const changeDestination = destination => {
         setFade(true)

@@ -22,15 +22,18 @@
     flex-direction: column;
 }
 
-.article_text h1 {
+.customTitle {
     font-family: var(--bellefair);
     font-weight: 500;
-    font-size: calc(3.4em + 5vw);
+    font-size: calc(3.4rem + 5vw);
+    display: block;
+    letter-spacing: normal;
+    color: var(--white);
 }
 
-.article_text h2 {
+.article_text h1:not(.customTitle) {
     font-family: var(--barlow-condensed);
-    font-size: calc(1em + .6vw);
+    font-size: calc(1rem + .6vw);
     font-weight: 500;
     letter-spacing: 4.72px;
 }
@@ -105,11 +108,11 @@
         justify-content: center;
     }
 
-    .article_text h1 {
+    .customTitle {
         font-size: 4.5rem;
     }
 
-    .article_text h2 {
+    .article_text h1 {
         font-size: 1rem;
     }
   }

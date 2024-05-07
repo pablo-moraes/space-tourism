@@ -23,7 +23,7 @@
     margin-left: 10%;
 }
 
-.active_tab article {
+.active_tab div {
     max-width: 470px;
     flex-grow: 1;
     margin-left: 2rem;
@@ -36,21 +36,23 @@
     justify-self: end;
 }
 
-.active_tab article h2 {
+.active_tab div h1 {
     font-family: var(--barlow-condensed);
     font-weight: 500;
     font-size: 16px;
     margin-bottom: 1rem;
 }
 
-.active_tab article h1 {
+.customTitle {
     font-family: var(--bellefair);
     font-weight: 500;
     font-size: 56px;
     margin-bottom: 1.5rem;
+    display: block;
+    margin-top: 1.2rem;
 }
 
-.active_tab article p {
+.active_tab div p {
     font-family: var(--barlow);
     font-weight: 500;
     font-size: 18px;
@@ -101,6 +103,10 @@ button[data-state='active'] {
 }
 
 @media only screen and (max-width: 956px) {
+    .active_tab div {
+        margin-inline: 2rem;
+    }
+
     .technology_container {
         display: flex;
         flex-direction: column;
@@ -112,16 +118,19 @@ button[data-state='active'] {
         order: 3;
     }
 
+    .active_tab div {
+        margin-inline: 2rem;
+    }
     
-    .active_tab article h2 {
+    .active_tab div h1 {
         font-size: 1rem;
     }
     
-    .active_tab article h1 {
+    .customTitle {
         font-size: 2.5rem;
     }
 
-    .active_tab article p {
+    .active_tab div p {
         font-size: .9rem;
     }
 
@@ -160,12 +169,12 @@ button[data-state='active'] {
         margin-inline: 2px;
         text-align: center;
     }
-    .active_tab article {
+    .active_tab div {
         max-width: 100%;
-        margin-inline: .4rem;
+        margin-inline: 1rem;
     }
     
-    .active_tab article h1 {
+    .customTitle {
         font-size: 1.5rem;
     }
 

@@ -52,13 +52,13 @@
     cursor: pointer;
 }
 
-.crew_slider h1 {
+.crew_slider h2 {
     font-size: 56px;
     color: #FFF;
     margin-bottom: 2rem;
 }
 
-.crew_slider h2 {
+.crew_slider h1 {
     font-size: 32px;
     margin-bottom: 1rem;
 }
@@ -120,11 +120,11 @@
         margin-bottom: 2rem;
     }
 
-    .crew_slider h2 {
+    .crew_slider h1 {
         font-size: 24px;
     }
 
-    .crew_slider h1 {
+    .crew_slider h2 {
         font-size: 40px;
     }
 }
@@ -172,11 +172,11 @@
         margin-inline: 0;
     }
 
-    .crew_slider h2 {
+    .crew_slider h1 {
         font-size: 16px;
     }
 
-    .crew_slider h1 {
+    .crew_slider h2 {
         font-size: 24px;
     }
 }

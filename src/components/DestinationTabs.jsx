@@ -30,16 +30,16 @@ function DestinationTabs({ options, handleClick }) {
                 <p>{currentDestination.description}</p>
                 <hr />
 
-                <footer className={styles.destination_info}>
-                    <article>
-                        <p>AVG. DISTANCE</p>
-                        <p>{currentDestination.avg_distance}</p>
-                    </article>
+                <footer className={styles.destination_info} role="contentinfo">
+                    <div>
+                        <p id="distance-label">AVG. DISTANCE</p>
+                        <p aria-labelledby="distance-label">{currentDestination.avg_distance}</p>
+                    </div>
 
-                    <article>
-                        <p>Est. travel time</p>
-                        <p>{currentDestination.travel_time}</p>
-                    </article>
+                    <div>
+                        <p id="traveltime-label">Est. travel time</p>
+                        <p aria-labelledby="traveltime-label">{currentDestination.travel_time}</p>
+                    </div>
                 </footer>
             </article>
         </section>

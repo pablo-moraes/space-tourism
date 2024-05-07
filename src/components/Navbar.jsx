@@ -19,7 +19,7 @@ function Navbar() {
 
   return (
     <header className={styles.nav_container}>
-      <img src={spaceLogo} alt="Logo" />
+      <img src={spaceLogo} alt="Space Tourism Logo" />
       <NavBurger handleClick={showNavbar} />
       <nav id="navbar" className={styles.navbar}>
         <ul>

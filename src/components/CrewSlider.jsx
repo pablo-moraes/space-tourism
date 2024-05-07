@@ -25,8 +25,8 @@ function CrewSlider({ crew, styles, onSwipe }) {
         >
           {crew.length > 0 && crew.map((member, index) => 
             <SwiperSlide key={index}>
-                <h2>{member.role}</h2>
-                <h1>{member.name}</h1>
+                <h1>{member.role}</h1>
+                <h2>{member.name}</h2>
                 <p>{member.bio}</p>
             </SwiperSlide>
           )}

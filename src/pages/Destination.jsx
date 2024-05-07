@@ -21,22 +21,22 @@ function Destination() {
     }
 
     return (
-        <section className='destination'>
+        <main className='destination'>
             <header className={styles.header_container}>
                 <h1><strong>01</strong> PICK YOUR DESTINATION</h1>
             </header>
 
-            <div className={styles.destination_container}>
-                <article className={fade ? styles.fade_in : styles.fade_out}>
-                    <img src={currentDestination.photo} alt={`${currentDestination.name}`} />
-                </article>
+            <section className={styles.destination_container}>
+                <div className={`${fade ? styles.fade_in : styles.fade_out} ${styles.image_preview}`}>
+                    <img src={currentDestination.photo} alt={`Picture of ${currentDestination.name}, the selected destination`} />
+                </div>
                 <article>
                     {destinations && (
                         <DestinationTabs options={destinations} handleClick={changeDestination} />
                     )}
                 </article>
-            </div>
-        </section>
+            </section>
+        </main>
     )
 }
 
